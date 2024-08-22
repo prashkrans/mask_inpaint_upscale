@@ -1,0 +1,13 @@
+initial_input
+final_output
+./BSRGAN/model_zoo/BSRGAN.pth
+./BSRGAN/model_zoo/testsets
+./mask_and_lama_inpainting/archived_codes
+./mask_and_lama_inpainting/build
+./Real-ESRGAN/weights
+./Real-ESRGAN/build
+./Real-ESRGAN/gfpgan
+.idea/
+__pycache__/
+env_m_i_u/
+
