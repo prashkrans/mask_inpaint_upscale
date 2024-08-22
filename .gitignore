@@ -8,7 +8,6 @@ mask_and_lama_inpainting/input_mask/
 
 BSRGAN/model_zoo/BSRGAN.pth
 BSRGAN/model_zoo/BSRGANx2.pth
-BSRGAN/testsets
 
 .idea/
 __pycache__/
