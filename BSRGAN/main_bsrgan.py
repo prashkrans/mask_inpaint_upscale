@@ -41,7 +41,7 @@ def main():
 
     #testsets = 'testsets'       # fixed, set path of testsets
     input_dir = '../mask_and_lama_inpainting/output_image/'
-    output_dir = '../final_output/bsrgan_output/'
+    output_dir = '../final_output/'
     testset_Ls = ['RealSRSet']  # ['RealSRSet','DPED']
 
 
