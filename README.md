@@ -1,6 +1,9 @@
 # Mask Inpaint Upscale
-Inpainting model used: Lama Inpainting  
-Upscaling model used: BSRGAN
+- Inpainting model used: **Lama Inpainting**  
+- Upscaling model used: **BSRGAN**
+
+### Demo Video:
+
 
 ### Prerequisites:
 - Python 3.10 (Might work with higher versions as well)
@@ -20,6 +23,11 @@ source env_m_i_u/bin/activate
 # Install the required dependencies
 pip install -r requirements.txt
 ```
+
+### Download BSRGAN models and put them inside the ./BSRGAN/model_zoo dir 
+1. [BSRGANx2.pth](https://drive.google.com/drive/folders/13kfr3qny7S2xwG9h7v95F5mkWs0OmU0D): For 2x upscale
+2. [BSRGAN.pth](https://drive.google.com/drive/folders/13kfr3qny7S2xwG9h7v95F5mkWs0OmU0D): For 4x upscale
+
 ### Usage:
 Perform inpainting using Lama, then upscale using BSRGAN 2x and 4x:
 ```
@@ -76,7 +84,7 @@ Upscales the lower resolution inpainted image upto 4x using the models below:
 
 ### Troubleshooting:
 Error - 
-File "/home/nashprat/.local/lib/python3.10/site-packages/basicsr/data/degradations.py", line 8, in <module>
+File "/home/<username>/.local/lib/python3.10/site-packages/basicsr/data/degradations.py", line 8, in <module>
     from torchvision.transforms.functional_tensor import rgb_to_grayscale
 ModuleNotFoundError: No module named 'torchvision.transforms.functional_tensor'
 
