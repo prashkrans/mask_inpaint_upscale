@@ -123,3 +123,8 @@ from torchvision.transforms.functional import rgb_to_grayscale
 Finally, the low res inpainted image is upscaled 4x times by Real-ESRGAN
 
 Usage: `python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]`...
+
+### Credits:
+1. [Lama Inpainting](https://github.com/advimman/lama) | [Apache-2.0 License](https://github.com/advimman/lama?tab=License-1-ov-file)
+2. [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) | [BSD-3-Clause license](https://github.com/xinntao/Real-ESRGAN?tab=BSD-3-Clause-1-ov-file)
+2. [BSRGAN](https://github.com/cszn/BSRGAN) | [Apache-2.0 License](https://github.com/cszn/BSRGAN?tab=Apache-2.0-1-ov-file)
