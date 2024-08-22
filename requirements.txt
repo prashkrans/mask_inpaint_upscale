@@ -1,3 +1,5 @@
+torch==1.8.0
+torchvision==0.9.0
 simple_lama_inpainting==0.1.2
 basicsr>=1.4.2
 facexlib>=0.2.5

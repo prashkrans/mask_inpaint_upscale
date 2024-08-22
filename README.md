@@ -18,6 +18,7 @@ python3 -m venv env_m_i_u
 source env_m_i_u/bin/activate
 
 # Install the required dependencies
+pip install torch==1.8.0 torchvision==0.9.0
 pip install -r requirements.txt
 ```
 ### Usage:
