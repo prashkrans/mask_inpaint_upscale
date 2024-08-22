@@ -1,0 +1,6 @@
+{
+    "IMG_DIR": "../initial_input",
+    "DESCALED_DIR": "./descaled_image",
+    "MASK_DIR": "./input_mask",
+    "OUTPUT_DIR": "./output_image"
+}
