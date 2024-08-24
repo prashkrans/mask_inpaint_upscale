@@ -3,7 +3,7 @@
 - Upscaling model used: **BSRGAN**
 
 ### Demo Video:
-
+https://github.com/user-attachments/assets/920ede66-7df1-44b1-8784-1ca923debf69
 
 ### Prerequisites:
 - Python 3.10 (Might work with higher versions as well)
@@ -24,33 +24,32 @@ source env_m_i_u/bin/activate
 pip install -r requirements.txt
 ```
 
-### Download BSRGAN models and put them inside the ./BSRGAN/model_zoo dir 
+### Download BSRGAN models and put them inside the `./BSRGAN/model_zoo` dir 
 1. [BSRGANx2.pth](https://drive.google.com/drive/folders/13kfr3qny7S2xwG9h7v95F5mkWs0OmU0D): For 2x upscale
 2. [BSRGAN.pth](https://drive.google.com/drive/folders/13kfr3qny7S2xwG9h7v95F5mkWs0OmU0D): For 4x upscale
+Note: Download both the models or make changes to the `BSRGAN/main_bsrgan.py` at `line 49` to use only a single model. 
 
 ### Usage:
 Perform inpainting using Lama, then upscale using BSRGAN 2x and 4x:
-```
-# Put the image(s) in the ./initial_input folder (multiple images can be processed at once)
+1. Put the image(s) in the ./initial_input folder (multiple images can be processed at once)
 
-# Make the script executable (need to run the below command only once)
-chmod +x run_mask_inpaint_upscale.sh 
+2. Make the script executable (need to run the command below only once)
+`chmod +x run_mask_inpaint_upscale.sh` 
 
-# Run the bash script. Please go through it once to assure yourself that its safe to run this script
-./run_mask_inpaint_upscale.sh
+3. Run the bash script. Please go through it once to assure yourself that its safe to run this script
+`./run_mask_inpaint_upscale.sh`
 
-# Images pop up sequentially asking user input to paint a mask i.e. the region over the image that needs to be removed. 
+4. Images pop up sequentially asking user input to paint a mask i.e. the region over the image that needs to be removed. 
 
-# Use "=" or "up arrow" to increase the brush size and "-" or "down arrow" to decrease the brush size
+5. Use "=" or "up arrow" to increase the brush size and "-" or "down arrow" to decrease the brush size
 
-# Press "Escape" to revert all the changes and repaint the mask
+6. Press "Escape" to revert all the changes and repaint the mask
 
-# Finally press "Enter" to save the mask(s) and wait for processing to complete
+7. Finally press "Enter" to save the mask(s) and wait for processing to complete
 
-# The BSRGAN upscaled output is saved in the ./final_output directory
-```
+8. The BSRGAN upscaled output is saved in the ./final_output directory
 
-When the .sh file is run the first time it automatically downloads two models about a GB in size. 
+9. When the .sh file is run the first time it automatically downloads two models about a GB in size. 
 
 ### Flow:
 1. Takes input of image(s) from the user and then descales them to avoid CUDA OOM errors.
