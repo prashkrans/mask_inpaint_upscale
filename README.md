@@ -10,6 +10,9 @@ https://github.com/user-attachments/assets/920ede66-7df1-44b1-8784-1ca923debf69
 - Nvidia drivers installed along with CUDA
 - Nvidia GPU with VRAM atleast 10-12GB (BSRGAN)
 - CPU can also be used but is much slower
+- Libjpeg and zlib1g for Pillow:  
+`sudo apt install libjpeg-dev zlib1g-dev`
+- An Image viewer app for previewing the output images
 
 ### Setup:
 ```
